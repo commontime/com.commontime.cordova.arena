@@ -1,0 +1,24 @@
+{
+  "name": "com.commontime.cordova.partsarena",
+  "version": "1.0.1",
+  "cordova": {
+    "id": "com.commontime.cordova.partsarena",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commontime/com.commontime.cordova.arena.git"
+  },
+  "keywords": [
+    "cordova"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Commontime Ltd"
+}

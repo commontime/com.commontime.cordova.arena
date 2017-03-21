@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.commontime.cordova.partsarena"
+        version="1.0.0">
+
+  <name>PartsArena</name>
+
+  <asset src="www/partsarena.js" target="js/partsarena.js"/>
+
+  <js-module src="www/partsarena.js" name="partsarena">
+    <clobbers target="partsarena" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="PartsArena">
+        <param name="android-package" value="com.commontime.plugin.PartsArena"/>
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/PartsArena.java" target-dir="src/com/commontime/plugin/"/>
+    <source-file src="src/android/PicklistContentObserver.java" target-dir="src/com/commontime/plugin/"/>
+    <source-file src="src/android/PicklistItem.java" target-dir="src/com/commontime/plugin/"/>
+    
+  </platform>
+
+</plugin>

@@ -8,14 +8,14 @@ public class PicklistItem
     private int id;
     private String partNo;
     private String partDescription;
-    private String partGty;
+    private String partQty;
     private String title;
 
-    public PicklistItem(int id, String partNo, String partDescription, String partGty, String title) {
+    public PicklistItem(int id, String partNo, String partDescription, String partQty, String title) {
         this.id = id;
         this.partNo = partNo;
         this.partDescription = partDescription;
-        this.partGty = partGty;
+        this.partQty = partQty;
         this.title = title;
     }
 
@@ -24,7 +24,7 @@ public class PicklistItem
         jo.put("id", id);
         jo.put("partNo", partNo);
         jo.put("partDescription", partDescription);
-        jo.put("partGty", partGty);
+        jo.put("partQty", partQty);
         jo.put("title", title);
         return jo;
     }
